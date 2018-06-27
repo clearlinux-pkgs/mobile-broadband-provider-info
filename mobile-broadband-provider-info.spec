@@ -4,12 +4,12 @@
 #
 Name     : mobile-broadband-provider-info
 Version  : 20170310
-Release  : 1
+Release  : 2
 URL      : https://github.com/GNOME/mobile-broadband-provider-info/archive/20170310.tar.gz
 Source0  : https://github.com/GNOME/mobile-broadband-provider-info/archive/20170310.tar.gz
 Summary  : Mobile Broadband Service Provider Information Database
 Group    : Development/Tools
-License  : PublicDomain
+License  : Public-Domain
 Requires: mobile-broadband-provider-info-data
 BuildRequires : libxml2-dev
 
@@ -45,7 +45,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530114341
+export SOURCE_DATE_EPOCH=1530114624
 %autogen --disable-static
 make  %{?_smp_mflags}
 
@@ -57,7 +57,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1530114341
+export SOURCE_DATE_EPOCH=1530114624
 rm -rf %{buildroot}
 %make_install
 
