@@ -4,7 +4,7 @@
 #
 Name     : mobile-broadband-provider-info
 Version  : 20220725
-Release  : 11
+Release  : 12
 URL      : https://download.gnome.org/sources/mobile-broadband-provider-info/20220725/mobile-broadband-provider-info-20220725.tar.xz
 Source0  : https://download.gnome.org/sources/mobile-broadband-provider-info/20220725/mobile-broadband-provider-info-20220725.tar.xz
 Summary  : Mobile Broadband Service Provider Information Database
