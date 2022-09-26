@@ -4,7 +4,7 @@
 #
 Name     : mobile-broadband-provider-info
 Version  : 20220725
-Release  : 12
+Release  : 13
 URL      : https://download.gnome.org/sources/mobile-broadband-provider-info/20220725/mobile-broadband-provider-info-20220725.tar.xz
 Source0  : https://download.gnome.org/sources/mobile-broadband-provider-info/20220725/mobile-broadband-provider-info-20220725.tar.xz
 Summary  : Mobile Broadband Service Provider Information Database
@@ -47,7 +47,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1658763141
+export SOURCE_DATE_EPOCH=1664159508
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -67,7 +67,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1658763141
+export SOURCE_DATE_EPOCH=1664159508
 rm -rf %{buildroot}
 %make_install
 
