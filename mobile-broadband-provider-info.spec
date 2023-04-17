@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : mobile-broadband-provider-info
-Version  : 20221107
-Release  : 15
-URL      : https://download.gnome.org/sources/mobile-broadband-provider-info/20221107/mobile-broadband-provider-info-20221107.tar.xz
-Source0  : https://download.gnome.org/sources/mobile-broadband-provider-info/20221107/mobile-broadband-provider-info-20221107.tar.xz
+Version  : 20230416
+Release  : 16
+URL      : https://download.gnome.org/sources/mobile-broadband-provider-info/20230416/mobile-broadband-provider-info-20230416.tar.xz
+Source0  : https://download.gnome.org/sources/mobile-broadband-provider-info/20230416/mobile-broadband-provider-info-20230416.tar.xz
 Summary  : Mobile Broadband Service Provider Information Database
 Group    : Development/Tools
 License  : Public-Domain
@@ -44,15 +44,15 @@ dev components for the mobile-broadband-provider-info package.
 
 
 %prep
-%setup -q -n mobile-broadband-provider-info-20221107
-cd %{_builddir}/mobile-broadband-provider-info-20221107
+%setup -q -n mobile-broadband-provider-info-20230416
+cd %{_builddir}/mobile-broadband-provider-info-20230416
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680039957
+export SOURCE_DATE_EPOCH=1681745525
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -72,7 +72,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1680039957
+export SOURCE_DATE_EPOCH=1681745525
 rm -rf %{buildroot}
 %make_install
 
